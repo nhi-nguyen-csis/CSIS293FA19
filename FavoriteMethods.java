@@ -18,13 +18,13 @@ public class FavoriteMethods
 		//methods that could be useful for future projects!
 		//each person can add in a method that they think is useful
 		//it can be something new or something we've done in the past
+		//so write the method and then test it out
+		
 		//here is Prof Steck's:
-
 		System.out.println("Prof Steck:  Generate a random number in range...");
 		System.out.println(randomNumber(5,7));
 
-
-	}
+	}//end main method
 
 	//randomNumber() returns a random number in the given range (between low and high, inclusive)
 	public static int randomNumber(int low, int high)
@@ -34,5 +34,4 @@ public class FavoriteMethods
 		return ranNum;
 	}
 
-
-}
+}//end class
