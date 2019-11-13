@@ -2,7 +2,7 @@
 	Jamie Steck and CSIS 293 FA19 0939
 	Nov 13, 2019
 	FavoriteMethods.java
-	A collection of our favorite useful methods
+	A collection of our favorite useful (static) methods
 	Dependencies: none
 	Credit: none
 */
@@ -13,7 +13,7 @@ public class FavoriteMethods
 {
 	public static void main(String[] parameters)
 	{
-		//the purpose of this program is to create a collection of useful methods
+		//the purpose of this program is to create a collection of useful (static) methods
 		//methods that could be used in many different programs
 		//methods that could be useful for future projects!
 		//each person can add in a method that they think is useful
