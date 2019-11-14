@@ -22,7 +22,7 @@ public class FavoriteMethods
 		
 		//here is Prof Steck's:
 		System.out.println("Prof Steck:  Generate a random number in range...");
-		System.out.println(randomNumber(5,7));
+		System.out.println(randomNumber(2,10));
 
 	}//end main method
 
