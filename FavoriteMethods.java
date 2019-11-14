@@ -23,6 +23,11 @@ public class FavoriteMethods
 		//here is Prof Steck's:
 		System.out.println("Prof Steck:  Generate a random number in range...");
 		System.out.println(randomNumber(2,10));
+		
+		//here is Pat Sullivan's:
+		System.out.println("Pat Sullivan: Simulating a d20 dice...");
+		d20();
+		
 
 	}//end main method
 
@@ -32,6 +37,21 @@ public class FavoriteMethods
 		Random ranGen = new Random();
 		int ranNum = ranGen.nextInt(high-low+1) + low;
 		return ranNum;
+	}
+	
+	//d20 method, uses the randomNumber method to simulate a 20 sided dice
+	public static void d20()
+	{
+		int roll = randomNumber(1,20);
+		System.out.printf("User has rolled a %d!%n", roll);
+		if(roll == 1)
+		{
+			System.out.println("Critical Fail!");
+		}
+		else if(roll == 20)
+		{
+			System.out.println("Critical Success!");
+		}
 	}
 
 }//end class
