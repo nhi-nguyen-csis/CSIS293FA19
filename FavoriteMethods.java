@@ -53,5 +53,17 @@ public class FavoriteMethods
 			System.out.println("Critical Success!");
 		}
 	}
+	public static int returnTheNumberofEvenIntInArray(int[] array)
+	{
+		int a = 0// varaible to hold the number of even integer
+			for(int i = 0; i < array.length; i++)
+			{
+				if(i%2 == 0) // check if the number at index i in the array is even
+				{
+					a++;// increase the value
+				}
+			}
+		return a;
+	}
 
 }//end class
