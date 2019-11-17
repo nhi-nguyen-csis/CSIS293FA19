@@ -68,11 +68,21 @@ public class FavoriteMethods
 			}
 		return a;
 	}
-	//Calculates the are of circle
+  
+  //Calculates the are of circle
 	public static void circleArea(int radius){
 		double dArea = Math.PI * Math.pow(radius, 2);
 		int area = (int)dArea;
 		System.out.println("The area of the circle " + area);
-	}
+  }
+	
+	public static void printStringArray(String[] array)
+	{
+		for(int i =0; i < array.length; ++i)
+		{
+			System.out.printf("%s, ", array[i]); 
+		}
+		System.out.println();
+  }
 
 }//end class
