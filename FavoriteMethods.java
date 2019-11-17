@@ -56,25 +56,27 @@ public class FavoriteMethods
 			System.out.println("Critical Success!");
 		}
 	}
+	
 	public static int returnTheNumberofEvenIntInArray(int[] array)
 	{
 		int a = 0// varaible to hold the number of even integer
-			for(int i = 0; i < array.length; i++)
+		for(int i = 0; i < array.length; i++)
+		{
+			if(i%2 == 0) // check if the number at index i in the array is even
 			{
-				if(i%2 == 0) // check if the number at index i in the array is even
-				{
-					a++;// increase the value
-				}
+				a++;// increase the value
 			}
+		}
 		return a;
 	}
   
-  //Calculates the are of circle
-	public static void circleArea(int radius){
+  	//Calculates the are of circle
+	public static void circleArea(int radius)
+	{
 		double dArea = Math.PI * Math.pow(radius, 2);
 		int area = (int)dArea;
 		System.out.println("The area of the circle " + area);
-  }
+  	}
 	
 	public static void printStringArray(String[] array)
 	{
@@ -83,6 +85,5 @@ public class FavoriteMethods
 			System.out.printf("%s, ", array[i]); 
 		}
 		System.out.println();
-  }
-
+  	}
 }//end class
