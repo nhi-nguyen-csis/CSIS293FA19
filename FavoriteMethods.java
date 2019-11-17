@@ -28,6 +28,9 @@ public class FavoriteMethods
 		System.out.println("Pat Sullivan: Simulating a d20 dice...");
 		d20();
 		
+		//here is Ben Berk's
+		System.out.println("Ben Berk: Calculating area of the circle...");
+		circleArea(4);
 
 	}//end main method
 
@@ -65,6 +68,13 @@ public class FavoriteMethods
 			}
 		return a;
 	}
+  
+  //Calculates the are of circle
+	public static void circleArea(int radius){
+		double dArea = Math.PI * Math.pow(radius, 2);
+		int area = (int)dArea;
+		System.out.println("The area of the circle " + area);
+  }
 	
 	public static void printStringArray(String[] array)
 	{
@@ -73,6 +83,6 @@ public class FavoriteMethods
 			System.out.printf("%s, ", array[i]); 
 		}
 		System.out.println();
-	}
+  }
 
 }//end class
