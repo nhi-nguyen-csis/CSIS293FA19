@@ -65,5 +65,14 @@ public class FavoriteMethods
 			}
 		return a;
 	}
+	
+	public static void printStringArray(String[] array)
+	{
+		for(int i =0; i < array.length; ++i)
+		{
+			System.out.printf("%s, ", array[i]); 
+		}
+		System.out.println();
+	}
 
 }//end class
