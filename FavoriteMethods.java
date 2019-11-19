@@ -102,4 +102,5 @@ public class FavoriteMethods
 			System.out.print(" %s ", word);	
 			count ++;
 		}
+	}
 }//end class
