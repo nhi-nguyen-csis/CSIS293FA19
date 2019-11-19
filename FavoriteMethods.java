@@ -36,6 +36,12 @@ public class FavoriteMethods
 		System.out.println("Joseph LeVine: Sorting the following list...");
 		bubbleSort();
 		
+
+		//here is Keith Askew's:
+        	System.out.println("Keith Askew's Printing Backwards Arrays");
+        	int[] arrayToPrint = new int[] {1, 2, 3, 4, 5}; //Can change numbers to whatever you like or add more
+        	printArrayBackward(arrayToPrint);
+
 		//here is Jackson Zavodny's
 		System.out.println("Jackson Zavodny: Getting a fortune...");
 		fortuneCookie();
@@ -167,6 +173,15 @@ public class FavoriteMethods
 		System.out.print("]");
 	}//end bubbleSort
 	
+	//Printing an Int array backward
+	public static void printArrayBackward(int[] arrayToPrint)
+	{
+		for (int i = arrayToPrint.length - 1; i >= 0; i--)
+             	{
+          	     System.out.printf("%s, ", arrayToPrint[i]);
+       		}
+        	System.out.println();
+    	}//end of printingArrayBackward
 	public static void fortuneCookie() //Gives a fortune based on randomly generated number
         {
             //generates a random number between 1-10.
@@ -210,5 +225,5 @@ public class FavoriteMethods
                     System.out.println("Error, your fortune cookie created a paradox and was subsequently deleted from existence.");
             }
 
-        }
+        }//end fortune cookie
 }//end class
