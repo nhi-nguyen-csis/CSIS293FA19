@@ -31,6 +31,10 @@ public class FavoriteMethods
 		//here is Ben Berk's
 		System.out.println("Ben Berk: Calculating area of the circle...");
 		circleArea(4);
+		
+		//here is Joseph LeVine's
+		System.out.println("Joseph LeVine: Sorting the following list...");
+		bubbleSort(nums);
 
 	}//end main method
 
@@ -59,7 +63,7 @@ public class FavoriteMethods
 	
 	public static int returnTheNumberofEvenIntInArray(int[] array)
 	{
-		int a = 0// varaible to hold the number of even integer
+		int a = 0; // varaible to hold the number of even integer
 		for(int i = 0; i < array.length; i++)
 		{
 			if(i%2 == 0) // check if the number at index i in the array is even
@@ -90,10 +94,10 @@ public class FavoriteMethods
 	//sum of an arrays of numbers
 	public static int sumOfAnArray(int[] numbers)
 	{
-		int sum = 0 //sum
+		int sum = 0; //sum
 		for(int i = 0; i < numbers.length; i++) //going through loop
 		{
-			sum = sum + numbers[i] //calculating sum
+			sum = sum + numbers[i]; //calculating sum
 		}
 		return sum; //returning sum
 	}
@@ -103,20 +107,59 @@ public class FavoriteMethods
 	{ 
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println{"Enter one word and num: ");
+		System.out.println("Enter one word and num: ");
 		String word = input.next();
 		int num = input.nextInt();
 		
 		int count = 1;
 		while(count <= num )
 		{
-			System.out.print(" %s ", word);	
+			System.out.printf("%s ", word);	
 			count ++;
 		}
 	}
 		
 	private static void printArray(int[] printArray) {
-        for (int index = 0; index < printArray.length; index++) {
-            System.out.println(printArray[index]);
-        }
+		for (int index = 0; index < printArray.length; index++) {
+		    System.out.println(printArray[index]);
+		}
+	}
+		
+	private static void bubbleSort() //sorts an array of numbers
+	{
+		int[] nums = new int[10];
+		Random randGen = new Random();
+		
+		for(int i = 0; i<nums.length; i++){
+			nums[i] = randGen.nextInt(10)+1;
+		}
+		
+		//print the unsorted array
+		System.out.print("\n[ ");
+		for(int i = 0; i<nums.length;i++){
+			System.out.print(nums[i] + " ");
+		}
+		System.out.print("]");
+		
+		boolean sorted = false; //control variable for the sorting
+		do{
+			sorted = true; //set the flag to true
+			
+			for(int i = 0; i<nums.length; i++){
+				if(nums[i] > nums[i+1]){
+					sorted = false; //if two numbers needed to be swapped, the list is not sorted.
+					int temp = nums[i+1]; //temp value so the two can be swapped
+					nums[i+1] = nums[i];
+					nums[i] = temp;
+				}
+			}
+		}while(sorted==false);
+		
+		//print the sorted array
+		System.out.print("\n[ ");
+		for(int i = 0; i<nums.length;i++){
+			System.out.print(nums[i] + " ");
+		}
+		System.out.print("]");
+	}//end bubbleSort
 }//end class
