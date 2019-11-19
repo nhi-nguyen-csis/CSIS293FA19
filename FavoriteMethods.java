@@ -85,7 +85,7 @@ public class FavoriteMethods
 			System.out.printf("%s, ", array[i]); 
 		}
 		System.out.println();
-  }
+  	}
 
 	//sum of an arrays of numbers
 	public static int sumOfAnArray(int[] numbers)
