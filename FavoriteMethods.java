@@ -99,15 +99,6 @@ public class FavoriteMethods
 		System.out.println("The area of the circle " + area);
   	}
 	
-	public static void printStringArray(String[] array)
-	{
-		for(int i =0; i < array.length; ++i)
-		{
-			System.out.printf("%s, ", array[i]); 
-		}
-		System.out.println();
-  	}
-	
 	//Calculates the factorial of a given number.
 	public static int factorial(int number) 
     	{ 
