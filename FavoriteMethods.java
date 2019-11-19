@@ -36,6 +36,10 @@ public class FavoriteMethods
 		System.out.println("Joseph LeVine: Sorting the following list...");
 		bubbleSort();
 
+		//here is Sasha's
+		int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 01};
+		printArrayBackward(nums);
+		
 	}//end main method
 
 	//randomNumber() returns a random number in the given range (between low and high, inclusive)
@@ -162,4 +166,14 @@ public class FavoriteMethods
 		}
 		System.out.print("]");
 	}//end bubbleSort
+	
+	//this method prints any array of ints backwards
+        private static void printArrayBackward(int[] arrayOfNumbers)
+    	{
+	    for (int i = arrayOfNumbers.length - 1; i >= 0; i--)
+	    {
+	    System.out.print(arrayOfNumbers[i] + " ");
+	    }
+    	}
+	
 }//end class
