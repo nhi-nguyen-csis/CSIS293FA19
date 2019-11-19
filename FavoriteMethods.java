@@ -53,6 +53,10 @@ public class FavoriteMethods
 		int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 01};
 		printArrayBackward2(nums);
 		
+		//here is Henry Tran's:
+		System.out.println("Henry Tran: Calculating area of the square...");
+		squareArea(12);
+		
 	}//end main method
 
 	//randomNumber() returns a random number in the given range (between low and high, inclusive)
@@ -270,6 +274,13 @@ public class FavoriteMethods
                 default:
                     System.out.println("Error, your fortune cookie created a paradox and was subsequently deleted from existence.");
             }
+		
+		//calculate the area of square
+	public static void squareArea(int edge)
+	{
+		double sArea = Math.pow(edge, 2);
+		System.out.printf("Calculate the area of square %.0f", sArea);
+	}
 
         }//end fortune cookie
 
