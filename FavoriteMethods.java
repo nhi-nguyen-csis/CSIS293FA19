@@ -35,7 +35,10 @@ public class FavoriteMethods
 		//here is Joseph LeVine's
 		System.out.println("Joseph LeVine: Sorting the following list...");
 		bubbleSort();
-		
+
+		//here is Noah Eichler's
+		System.out.println("Calculating the factorial of 5.");
+		factorial(5);
 
 		//here is Keith Askew's:
         	System.out.println("Keith Askew's Printing Backwards Arrays");
@@ -95,6 +98,25 @@ public class FavoriteMethods
 		int area = (int)dArea;
 		System.out.println("The area of the circle " + area);
   	}
+	
+	public static void printStringArray(String[] array)
+	{
+		for(int i =0; i < array.length; ++i)
+		{
+			System.out.printf("%s, ", array[i]); 
+		}
+		System.out.println();
+  	}
+	
+	//Calculates the factorial of a given number.
+	public static int factorial(int number) 
+    	{ 
+		if (number == 0) 
+		{
+			return 1; 
+		}
+		return number*factorial(number-1); 
+    	}	 
 	
 	public static void printStringArray(String[] array)
 	{
