@@ -35,10 +35,20 @@ public class FavoriteMethods
 		//here is Joseph LeVine's
 		System.out.println("Joseph LeVine: Sorting the following list...");
 		bubbleSort();
+		
+
+		//here is Keith Askew's:
+        	System.out.println("Keith Askew's Printing Backwards Arrays");
+        	int[] arrayToPrint = new int[] {1, 2, 3, 4, 5}; //Can change numbers to whatever you like or add more
+        	printArrayBackward(arrayToPrint);
+
+		//here is Jackson Zavodny's
+		System.out.println("Jackson Zavodny: Getting a fortune...");
+		fortuneCookie();
 
 		//here is Sasha's
 		int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 01};
-		printArrayBackward(nums);
+		printArrayBackward2(nums);
 		
 	}//end main method
 
@@ -176,4 +186,78 @@ public class FavoriteMethods
 	    }
     	}
 	
+
+
+	//max(int, int, int) find the maximum between three integers
+	private static int max(int x, int y, int z)
+	{
+		int maxValue = x;
+		
+		if (y > maxValue)
+		{
+			maxValue = y;
+		}
+		
+		if (z > maxValue)
+		{
+			maxValue = z;
+		}
+		
+		return maxValue;
+	} //end of max of three integers
+
+	//Printing an Int array backward
+	public static void printArrayBackward2(int[] arrayToPrint)
+	{
+		for (int i = arrayToPrint.length - 1; i >= 0; i--)
+             	{
+          	     System.out.printf("%s, ", arrayToPrint[i]);
+       		}
+        	System.out.println();
+    	}//end of printingArrayBackward
+	public static void fortuneCookie() //Gives a fortune based on randomly generated number
+        {
+            //generates a random number between 1-10.
+            Random randomGen = new Random();
+            int randomNum = randomGen.nextInt(10) + 1;
+
+            //Prints out fortune cookie statements depending on the random number generated
+            switch(randomNum)
+            {
+                case 1:
+                    System.out.println("Today it's up to you to create the peacefulness you long for.");
+                    break;
+                case 2:
+                    System.out.println("Your high-minded principles spell success.");
+                    break;
+                case 3:
+                    System.out.println("Hard work pays off in the future, laziness pays off now.");
+                    break;
+                case 4:
+                    System.out.println("Change can hurt, but it leads a path to something better.");
+                    break;
+                case 5:
+                    System.out.println("A dream you have will come true.");
+                    break;
+                case 6:
+                    System.out.println("You will become great if you believe in yourself.");
+                    break;
+                case 7:
+                    System.out.println("You already know the answer to the questions lingering inside your head.");
+                    break;
+                case 8:
+                    System.out.println("The greatest risk is not taking one.");
+                    break;
+                case 9:
+                    System.out.println("Now is the time to try something new.");
+                    break;
+                case 10:
+                    System.out.println("Its amazing how much good you can do if you don't care who gets the credit.");
+                    break;
+                default:
+                    System.out.println("Error, your fortune cookie created a paradox and was subsequently deleted from existence.");
+            }
+
+        }//end fortune cookie
+
 }//end class
