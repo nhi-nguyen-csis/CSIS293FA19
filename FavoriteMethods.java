@@ -85,8 +85,19 @@ public class FavoriteMethods
 			System.out.printf("%s, ", array[i]); 
 		}
 		System.out.println();
-  	}
-	
+  }
+
+	//sum of an arrays of numbers
+	public static int sumOfAnArray(int[] numbers)
+	{
+		int sum = 0 //sum
+		for(int i = 0; i < numbers.length; i++) //going through loop
+		{
+			sum = sum + numbers[i] //calculating sum
+		}
+		return sum; //returning sum
+	}
+
 	//Loop a word.
 	public static void loopAWord (String [] args) 
 	{ 
