@@ -34,7 +34,7 @@ public class FavoriteMethods
 		
 		//here is Joseph LeVine's
 		System.out.println("Joseph LeVine: Sorting the following list...");
-		bubbleSort(nums);
+		bubbleSort();
 
 	}//end main method
 
