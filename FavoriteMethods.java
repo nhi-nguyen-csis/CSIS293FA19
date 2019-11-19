@@ -86,4 +86,20 @@ public class FavoriteMethods
 		}
 		System.out.println();
   	}
+	
+	//Loop a word.
+	public static void loopAWord (String [] args) 
+	{ 
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println{"Enter one word and num: ");
+		String word = input.next();
+		int num = input.nextInt();
+		
+		int count = 1;
+		while(count <= num )
+		{
+			System.out.print(" %s ", word);	
+			count ++;
+		}
 }//end class
