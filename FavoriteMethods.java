@@ -35,6 +35,11 @@ public class FavoriteMethods
 		//here is Joseph LeVine's
 		System.out.println("Joseph LeVine: Sorting the following list...");
 		bubbleSort();
+		
+		//here is Keith Askew's:
+        	System.out.println("Keith Askew's Printing Backwards Arrays");
+        	int[] arrayToPrint = new int[] {1, 2, 3, 4, 5}; //Can change numbers to whatever you like or add more
+        	printArrayBackward(arrayToPrint);
 
 	}//end main method
 
@@ -162,4 +167,14 @@ public class FavoriteMethods
 		}
 		System.out.print("]");
 	}//end bubbleSort
+	
+	//Printing an Int array backward
+	public static void printArrayBackward(int[] arrayToPrint)
+	{
+		for (int i = arrayToPrint.length - 1; i >= 0; i--)
+             	{
+          	     System.out.printf("%s, ", arrayToPrint[i]);
+       		}
+        	System.out.println();
+    	}//end of printingArrayBackward
 }//end class
