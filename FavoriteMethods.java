@@ -46,6 +46,10 @@ public class FavoriteMethods
 		System.out.println("Jackson Zavodny: Getting a fortune...");
 		fortuneCookie();
 
+		//here is Sasha's
+		int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 01};
+		printArrayBackward2(nums);
+		
 	}//end main method
 
 	//randomNumber() returns a random number in the given range (between low and high, inclusive)
@@ -173,6 +177,16 @@ public class FavoriteMethods
 		System.out.print("]");
 	}//end bubbleSort
 	
+	//this method prints any array of ints backwards
+        private static void printArrayBackward(int[] arrayOfNumbers)
+    	{
+	    for (int i = arrayOfNumbers.length - 1; i >= 0; i--)
+	    {
+	    System.out.print(arrayOfNumbers[i] + " ");
+	    }
+    	}
+	
+
 
 	//max(int, int, int) find the maximum between three integers
 	private static int max(int x, int y, int z)
@@ -193,7 +207,7 @@ public class FavoriteMethods
 	} //end of max of three integers
 
 	//Printing an Int array backward
-	public static void printArrayBackward(int[] arrayToPrint)
+	public static void printArrayBackward2(int[] arrayToPrint)
 	{
 		for (int i = arrayToPrint.length - 1; i >= 0; i--)
              	{
