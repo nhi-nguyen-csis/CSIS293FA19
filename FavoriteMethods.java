@@ -114,4 +114,9 @@ public class FavoriteMethods
 			count ++;
 		}
 	}
+		
+	private static void printArray(int[] printArray) {
+        for (int index = 0; index < printArray.length; index++) {
+            System.out.println(printArray[index]);
+        }
 }//end class
