@@ -173,6 +173,25 @@ public class FavoriteMethods
 		System.out.print("]");
 	}//end bubbleSort
 	
+
+	//max(int, int, int) find the maximum between three integers
+	private static int max(int x, int y, int z)
+	{
+		int maxValue = x;
+		
+		if (y > maxValue)
+		{
+			maxValue = y;
+		}
+		
+		if (z > maxValue)
+		{
+			maxValue = z;
+		}
+		
+		return maxValue;
+	} //end of max of three integers
+
 	//Printing an Int array backward
 	public static void printArrayBackward(int[] arrayToPrint)
 	{
@@ -226,4 +245,5 @@ public class FavoriteMethods
             }
 
         }//end fortune cookie
+
 }//end class
