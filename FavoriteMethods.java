@@ -22,7 +22,10 @@ public class FavoriteMethods
 		
 		//here is Prof Steck's:
 		System.out.println("Prof Steck:  Generate a random number in range...");
-		System.out.println(randomNumber(2,10));
+		int ranNum = randomNumber(2,10);
+		System.out.println(ranNum);
+		//is it an even number?
+		 System.out.println("Is it an even number? " + isEvenNumber(ranNum));
 		
 		//here is Pat Sullivan's:
 		System.out.println("Pat Sullivan: Simulating a d20 dice...");
@@ -53,5 +56,17 @@ public class FavoriteMethods
 			System.out.println("Critical Success!");
 		}
 	}
+	
+	//Nhi adds: isEvenNumber() method to check if the random number is an even number 
+	public static boolean isEvenNumber(int ran){
+		boolean found;
+		if(ran % 2 == 0){
+		    found = true;
+		}
+		else{
+		    found = false;
+		}
+		return found;
+   	}
 
 }//end class
